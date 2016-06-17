@@ -1,0 +1,283 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	/*background-color: #888;*/												
+}
+
+*{
+	padding: 0;
+	border: 0;
+	margin: 0;
+	list-style: none;
+	font-family: 'Calibri';
+}
+
+@media only screen and (max-width: 768px){
+	nav ul{
+		position: fixed;
+		width: 100%;
+		height: 10%;
+		top: -100%;
+		left: 0;
+		/*background-color: #555;*/
+		/*border:3px solid #f0f;*/
+		font-size: 0;
+		text-align: center;
+		z-index: 99;
+		/*padding: 0px 10px;*/
+		/*box-shadow: 0px 3px 15px #333;*/
+		transition: 0.8s;
+		/*display: none;*/
+	}
+
+	.mobilenav{
+		top: 50px;
+	}
+
+	nav ul li{
+		position: relative;
+		/*width: 10%;*/
+		height: 100%;
+		/*display: inline-block;*/
+		/*border: 1px solid #00f;*/
+		padding: 0 2%;
+		background: rgba(255,255,255,0.9);
+		z-index: 90;
+	}
+
+	nav .mobileburger{
+		position: fixed;
+		width: 100%;
+		height: 50px;
+		top: 0;
+		left: 0;
+		/*border: 1px solid #f00;*/
+		z-index: 101;
+		background: #333;
+	}
+
+	.burger{
+		position: absolute;
+		width: 35px;
+		height: 25px;
+		/*border: 1px solid #f0f;*/
+		top: 0;
+		bottom: 0;
+		right: 5%;
+		margin: auto;
+		text-align: center;
+
+	}
+
+	.burgertop{
+		position: absolute;
+		width: 100%;
+		height: 4px;
+		background: #fc1;
+		left: 0;
+		right: 0;
+		top: 0;
+		margin: auto;
+		border-radius: 10px;
+	}
+	.burgermid{
+		position: absolute;
+		width: 100%;
+		height: 4px;
+		background: #fc1;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		border-radius: 10px;
+	}
+	.burgerbot{
+		position: absolute;
+		width: 100%;
+		height: 4px;
+		background: #fc1;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		border-radius: 10px;
+	}
+
+	nav ul li a{
+		position: absolute;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		text-decoration: none;
+		width: 100%;
+		height: 100%;
+		/*border: 2px solid #000;*/
+		font-size: 20px;
+		color: #000;
+		font-weight: 700;
+		
+	}
+
+	nav ul li img{
+		position: absolute;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		/*width: 100%;*/
+		height: 100%;
+	}
+
+
+	nav ul li a .navb:before{
+		display: inline-block;
+		height: 100%;
+		content: '';
+		width: 0;
+		vertical-align: middle;
+	}
+
+
+
+	nav ul li a .navb{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		/*border: 3px solid #f00;*/
+		transition: 0.6s;
+	}
+
+	nav ul li .navb:hover{
+		color: #fc1;
+		background-color: #3da;
+	}
+
+	.onthispage{
+		color: #fc1;
+		/*background-color: #ad3;*/
+	}
+
+	.col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+
+@media only screen and (min-width: 769px){ 
+	nav ul{
+		position: fixed;
+		width: 100%;
+		height: 60px;
+		top: 0;
+		left: 0;
+		background-color: rgba(255,255,255,0.9);
+		border-bottom: 1px solid #fff;
+		font-size: 0;
+		text-align: center;
+		z-index: 100;
+		/*padding: 0px 10px;*/
+		/*box-shadow: 0px 3px 15px #333;*/
+
+	}
+
+	nav ul li{
+		position: relative;
+		width: 14%;
+		height: 100%;
+		display: inline-block;
+		/*border: 1px solid #00f;*/
+
+	}
+
+	nav ul li a{
+		position: absolute;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		text-decoration: none;
+		width: 100%;
+		/*height: 100%;*/
+		/*border: 2px solid #000;*/
+		font-size: 20px;
+		padding: 5px 0;
+		color: #555;
+	}
+
+	nav ul li img{
+		position: absolute;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		/*width: 100%;*/
+		height: 100%;
+	}
+
+
+	nav ul li a .navb:before{
+		display: inline-block;
+		height: 100%;
+		content: '';
+		width: 0;
+		vertical-align: middle;
+	}
+
+
+
+	nav ul li a .navb{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		/*border: 3px solid #f00;*/
+		transition: 0.48s;
+	}
+
+	nav ul li .navb:hover{
+		color: #fff;
+		background-color: #fc0;
+	}
+
+	.onthispage{
+		color: #fc0;
+		/*background-color: #ad3;*/
+	}
+
+	    .col-1 {width: 8.33%;}
+	    .col-2 {width: 16.66%;}
+	    .col-3 {width: 25%;}
+	    .col-4 {width: 33.33%;}
+	    .col-5 {width: 41.66%;}
+	    .col-6 {width: 50%;}
+	    .col-7 {width: 58.33%;}
+	    .col-8 {width: 66.66%;}
+	    .col-9 {width: 75%;}
+	    .col-10 {width: 83.33%;}
+	    .col-11 {width: 91.66%;}
+	    .col-12 {width: 100%;}
+
+
+}
+/*--------------------------------------------------*/
+

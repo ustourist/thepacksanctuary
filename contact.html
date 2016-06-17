@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="about doggy story">
+	<link rel="icon" type="image/png" href="https://cdn3.iconfinder.com/data/icons/tango-icon-library/48/camera-photo-24.png"/>
+	<link rel="stylesheet" href="navbar.css">
+	<link rel="stylesheet" href="contact.css">
+	<title>Dog House</title>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="Index.html"><img src="images/logo.gif"></a></li>
+			<li><a href="Aboutdoghouse.html"><p class="navb">About us</p></a></li>
+			<li><a href="contact.html" class="onthispage"><p class="navb">Contact</p></a></li>
+			<li><a href="adopt-test.html"><p class="navb">Adopt</p></a></li>
+			<li><a href="donate.html"><p class="navb">Donate</p></a></li>
+			<li><a href="joinvolunteer.html"><p class="navb">Join us</p></a></li>
+		</ul>
+
+		<div class="mobileburger col-m-12">
+			<div class="burger">
+				<div class="burgertop"></div>
+				<div class="burgermid"></div>
+				<div class="burgerbot"></div>
+			</div>
+		</div>
+		
+	</nav>
+
+
+
+	<div class="contact">
+		<section id="contactinfo">
+
+			<div class="contactinfoall">
+
+
+				<div class="coninfobox coninfobox1">
+					<div class="conemail">
+						<img src="images/fac.png" class="phstyle">
+						<img src="images/twi.png" class="phstyle">
+						<img src="images/eemail.png" class="phstyle">
+						<img src="images/pint.png" class="phstyle">
+						<img src="images/tum.png" class="phstyle">
+					</div>
+				</div>
+				<div class="coninfobox">
+					<div class="conmap">
+						<img src="images/map1.png">
+					</div>
+					<div class="coninfo">
+						SanZhi Sanctuary:<br>
+						<br>
+						2–1 NanShiGang, Xi Ban Village, SanZhi District, New Taipei City 25242<br>
+						<br>
+	 					新北市三芝區錫板村南勢崗2-1號, 25242<br>
+ 					</div>
+				</div>
+				<div class="coninfobox">
+					<div class="conmap">
+						<img src="images/map2.png">
+					</div>
+					<div class="coninfo">
+						The Sanctuary Beach House Rehoming Centre:<br>
+						<br>
+						58–10 KanZiJiao, FuJi Village, ShiMen District, New Taipei City 25341<br>
+						<br>
+						台北縣石門鄉崁子腳58–10號<br>
+						<br>
+						Phone: 02 2638 3220<br>
+					</div>
+				</div>
+				<div class="coninfobox">
+					<div class="conmap">
+						<img src="images/map3.png">
+					</div>
+					<div class="coninfo">
+						FuJi Sanctuary:<br>
+						<br>
+						North 15 Township Road, New Taipei City<br>
+						<br>
+						新北市三芝區北15鄉道<br>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+
+		<div class="fbnews">
+					<div class="fbbtn">
+						<p>F</p>
+						<p>A</p>
+						<p>C</p>
+						<p>E</p>
+						<p>B</p>
+						<p>O</p>
+						<p>O</p>
+						<p>K</p>
+					</div>
+
+					<div class="fb-page" 
+								data-href="https://www.facebook.com/ThePACKSanctuary" data-tabs="timeline" 		data-small-header="false" 
+								data-adapt-container-width="true" 
+								data-hide-cover="false" 
+								data-show-facepile="false">
+								<div class="fb-xfbml-parse-ignore">
+									<blockquote cite="https://www.facebook.com/ThePACKSanctuary">
+										<a href="https://www.facebook.com/ThePACKSanctuary"></a>
+									</blockquote>
+								</div>
+						</div>					
+		</div>
+	</div>
+		
+		
+
+<script src="jquery-1.11.3.js"></script>
+<script src="mobilenav.js"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?libraries=places&callback=initAutocomplete"
+         async defer></script> -->
+
+<div id="fb-root"></div>
+<script>
+
+	
+
+	(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.5";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+
+
+
+
+	$(function(){
+		$('.fbnews').hover(function(){
+			$('.fbbtn').toggleClass('fbbtnadd');
+			$('.fbnews').toggleClass('fbnewsadd');
+			$('.fb-page').toggleClass('fb-pageadd');
+		})
+	});
+
+	$(function(){
+		$('.fbbtn').click(function(){
+			$('.fbbtn').toggleClass('fbbtnadd');
+			$('.fbnews').toggleClass('fbnewsadd');
+			$('.fb-page').toggleClass('fb-pageadd');
+		})
+	});
+
+
+
+	// function initAutocomplete() {
+	//     var map = new google.maps.Map(document.getElementById('ggmapblock'), {
+	//      	center: {lat: -33.8688, lng: 151.2195},
+	//      	zoom: 13,
+	//      	mapTypeId: google.maps.MapTypeId.ROADMAP
+	//     });
+	// 	// Create the search box and link it to the UI element.
+	//     var input = document.getElementById('pac-input');
+	//   	var searchBox = new google.maps.places.SearchBox(input);
+	//   	map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+	//   	// Bias the SearchBox results towards current map's viewport.
+	//   	map.addListener('bounds_changed', function() {
+	//   	  searchBox.setBounds(map.getBounds());
+	//   	});
+
+	//   	var markers = [];
+	//   	// [START region_getplaces]
+	//   	// Listen for the event fired when the user selects a prediction and retrieve
+	//   	// more details for that place.
+	//   	searchBox.addListener('places_changed', function() {
+	//     	var places = searchBox.getPlaces();
+
+	//     	if (places.length == 0) {
+	//     	  	return;
+	//     	}
+
+	//     	// Clear out the old markers.
+	//     	markers.forEach(function(marker) {
+	//     	  marker.setMap(null);
+	//     	});
+	//     	markers = [];
+
+	//     	// For each place, get the icon, name and location.
+	//     	var bounds = new google.maps.LatLngBounds();
+	//     	places.forEach(function(place) {
+	// 	      	var icon = {
+	// 	      		url: place.icon,
+	// 	      		size: new google.maps.Size(71, 71),
+	// 	      		origin: new google.maps.Point(0, 0),
+	// 	      		anchor: new google.maps.Point(17, 34),
+	// 	      		scaledSize: new google.maps.Size(25, 25)
+	// 	        };
+
+	//         // Create a marker for each place.
+	// 	        markers.push(new google.maps.Marker({
+	// 	        map: map,
+	// 	        icon: icon,
+	// 	        title: place.name,
+	// 	        position: place.geometry.location
+	//       		}));
+
+	// 	      	if (place.geometry.viewport) {
+	// 	        // Only geocodes have viewport.
+	// 	        	bounds.union(place.geometry.viewport);
+	// 	     	 } else {
+	// 	       	    bounds.extend(place.geometry.location);
+	// 	      	}
+	//     	});
+	//     	map.fitBounds(bounds);
+	//   	});
+	//   // [END region_getplaces]
+	// }
+
+
+</script>
+
+
+
+<!-- //////////another google map api without searchbox.////////////
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+
+	function initialize() {
+	  var mapProp = {
+	    center:new google.maps.LatLng(51.508742,-0.120850),
+	    zoom:5,
+	    mapTypeId:google.maps.MapTypeId.ROADMAP
+	  };
+	  var map=new google.maps.Map(document.getElementById("ggmapblock"), mapProp);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+
+</script> -->
+
+
+
+
+
+
+
+</body>
+
+</html>
